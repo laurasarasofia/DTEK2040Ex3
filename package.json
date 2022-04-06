@@ -1,0 +1,20 @@
+{
+  "name": "dtek2040ex3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laurasarasofia/DTEK2040Ex3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laurasarasofia/DTEK2040Ex3/issues"
+  },
+  "homepage": "https://github.com/laurasarasofia/DTEK2040Ex3#readme"
+}
