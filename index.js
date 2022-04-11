@@ -70,11 +70,30 @@ app.get('/api/persons/:id', (req, res) => {
 
 app.use(bodyParser.json())
 
+const generateId = () =>{
+    const maxId =  Math.floor(Math.random()*9000000000)
+    return maxId +1
+}
+
 
 app.post('/api/persons', (req, res) => {
-    const maxId = persons.length > 0 ? persons.map(p => p.id).sort((a,b) => a - b).reverse()[0] : 1
-    const person = req.body
-    person.id = maxId + 1
+    const body = req.body
+    
+    if(body.name === undefined){
+        return response.status(400).json({error: 'nimi puuttuu'})
+    }
+    if(persons.find(person=> person.name=== body.name)){
+        return response.status(400).json({error: 'name must be unique'})
+    }
+    if(body.number === undefined){
+        return response.status(400).json({error: 'numero puuttuu'})
+    }
+
+    const person ={
+        name: body.name,
+        number: body.number,
+        id: generateId(),
+    }
   
     persons = persons.concat(person)
   
