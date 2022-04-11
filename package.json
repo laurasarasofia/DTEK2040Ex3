@@ -11,10 +11,15 @@
     "type": "git",
     "url": "git+https://github.com/laurasarasofia/DTEK2040Ex3.git"
   },
-  "author": "",
+  "author": "Laura Silvala",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/laurasarasofia/DTEK2040Ex3/issues"
   },
-  "homepage": "https://github.com/laurasarasofia/DTEK2040Ex3#readme"
+  "homepage": "https://github.com/laurasarasofia/DTEK2040Ex3#readme",
+
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+
 }
