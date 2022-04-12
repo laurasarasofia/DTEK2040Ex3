@@ -20,7 +20,8 @@
   "homepage": "https://github.com/laurasarasofia/DTEK2040Ex3#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "mongoose": "^6.2.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
